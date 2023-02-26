@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+          margin: 20px;
+        }
+      </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Let us know where to send your goods!</h1>
+        <p>Add and remove to your saved addresses so we can quickly ship to you (or a loved one!) </p>
+            <div class="card-body">
+              <form>
+                <!-- Text form inputs -->
+                <div class="row mb-1">
+                  <div class="col-3">
+                    <div class="form-outline">
+                      <input type="text" id="first-name" class="form-control" />
+                      <label class="form-label" for="first-name">First name</label>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-outline mb-1">
+                      <input type="text" id="last-name" class="form-control" />
+                      <label class="form-label" for="last-name">Last name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                <div class="form-outline mb-1">
+                  <input type="text" id="address" class="form-control" />
+                  <label class="form-label" for="address">Address</label>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                      <div class="form-outline mb-1">
+                        <input type="text" id="city" class="form-control" />
+                        <label class="form-label" for="city">City</label>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <div class="form-outline mb-1">
+                        <input type="text" id="state" class="form-control" />
+                        <label class="form-label" for="state">State</label>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-outline mb-1">
+                        <input type="text" id="zip" class="form-control" />
+                        <label class="form-label" for="zip">Zip</label>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-3"
+                <div class="form-outline mb-1">
+                  <input type="number" id="phone" class="form-control" />
+                  <label class="form-label" for="phone">Phone</label>
+                </div>
+              </form>
+            <div class="col-3">
+                <button id="add" class="btn btn-primary form-control mb-4">Add New Address</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone</th>
+        </tr>
+</table>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="Week-10-Index.js"></script>
+</body>
+</html>
